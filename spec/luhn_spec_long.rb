@@ -2,7 +2,7 @@ require_relative '../lib/credit_card'
 require 'minitest/autorun'
 require 'yaml'
 
-cards = YAML.load_file 'spec/test_numbers.yml'
+cards = YAML.load_file 'test_numbers.yml'
 
 describe 'HAPPY: Test valid credit card numbers' do
   it 'works on all Visa cards' do
